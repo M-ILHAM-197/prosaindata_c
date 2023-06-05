@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TUGAS 1 &#8212; Proyek Sains Data</title>
+    <title>TUGAS 1 (Crawling Data) &#8212; Proyek Sains Data</title>
   
   
   
@@ -63,7 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'tugas_prosaindata/Tugas-1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="TUGAS 3" href="Tugas-3.html" />
+    <link rel="next" title="TUGAS 3 (Timeseries)" href="Tugas-3.html" />
     <link rel="prev" title="Welcome to your Jupyter Book" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -157,10 +157,10 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Tugas</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">TUGAS 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tugas-3.html">TUGAS 3</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">TUGAS 1 (Crawling Data)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas-3.html">TUGAS 3 (Timeseries)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="UTS_PSD.html">UTS PROYEK SAINS DATA</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tugas-4.html">TUGAS 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas-4.html">TUGAS 4 (Pagerank Implementasi Github)</a></li>
 </ul>
 
     </div>
@@ -373,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>TUGAS 1</h1>
+    <h1>TUGAS 1 (Crawling Data)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -387,8 +387,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="tugas-1">
-<h1>TUGAS 1<a class="headerlink" href="#tugas-1" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="tugas-1-crawling-data">
+<h1>TUGAS 1 (Crawling Data)<a class="headerlink" href="#tugas-1-crawling-data" title="Permalink to this heading">#</a></h1>
 <p>#TUGAS 1</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -415,7 +415,7 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting snscrape
   Downloading snscrape-0.6.2.20230320-py3-none-any.whl (71 kB)
 ?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/71.8 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">71.8/71.8 kB</span> <span class=" -Color -Color-Red">2.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">71.8/71.8 kB</span> <span class=" -Color -Color-Red">8.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
 ?25hRequirement already satisfied: requests[socks] in /usr/local/lib/python3.10/dist-packages (from snscrape) (2.27.1)
 Requirement already satisfied: lxml in /usr/local/lib/python3.10/dist-packages (from snscrape) (4.9.2)
 Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.10/dist-packages (from snscrape) (4.11.2)
@@ -429,9 +429,7 @@ Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6 in /usr/local/lib/pytho
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: snscrape
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed snscrape-0.6.2.20230320
+Successfully installed snscrape-0.6.2.20230320
 </pre></div>
 </div>
 </div>
@@ -457,7 +455,7 @@ Building wheels for collected packages: bs4
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for bs4 (setup.py) ... ?25l?25hdone
-  Created wheel for bs4: filename=bs4-0.0.1-py3-none-any.whl size=1257 sha256=a52913a3ca24cf1f6256b0415ffb31c4c9e14127118401e92175569f79547afa
+  Created wheel for bs4: filename=bs4-0.0.1-py3-none-any.whl size=1257 sha256=cedc0b0e65b4a5d0fabf6f5cf2276211731c16f489d31a0e16840b4186880392
   Stored in directory: /root/.cache/pip/wheels/25/42/45/b773edc52acb16cd2db4cf1a0b47117e2f69bb4eb300ed0e70
 Successfully built bs4
 </pre></div>
@@ -885,7 +883,7 @@ done[200] &gt;&gt; 150411100084
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">TUGAS 3</p>
+        <p class="prev-next-title">TUGAS 3 (Timeseries)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
